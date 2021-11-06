@@ -3,4 +3,7 @@ from api import models
 
 # Register your models here.
 
-admin.site.register(models.Assignment)
+class AssignmentAdmin(admin.ModelAdmin):
+    list_filter = ('course', )
+
+admin.site.register(models.Assignment, AssignmentAdmin)

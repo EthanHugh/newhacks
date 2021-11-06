@@ -20,39 +20,39 @@ class AssignmentViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.all()
     
-    http_method_names = ['get']
+    # http_method_names = ['get']
 
 
 class Course212ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.filter(course="ECE212")
     
-    http_method_names = ['get']
+    # http_method_names = ['get']
     
 
 class Course241ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.filter(course="ECE241")
     
-    http_method_names = ['get']
+    # http_method_names = ['get']
 
     
 class Course244ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.filter(course="ECE244")
     
-    http_method_names = ['get']
+    # http_method_names = ['get']
 
     
 class Course290ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.filter(course="MAT290")
     
-    http_method_names = ['get']
+    # http_method_names = ['get']
 
 
 class Course291ViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.filter(course="MAT291")
     
-    http_method_names = ['get']
+    # http_method_names = ['get']

@@ -12,9 +12,9 @@ class Assignment(models.Model):
     date = models.IntegerField()
     month = models.IntegerField()
     weight = models.FloatField()
-    content = models.TextField()
-    submission_link = models.TextField()
-    reference_link = models.TextField()
+    content = models.TextField(blank=True, null=True)
+    submission_link = models.TextField(blank=True, null=True)
+    reference_link = models.TextField(blank=True, null=True)
 
     def __str__(self):
         """Return the model as a string"""

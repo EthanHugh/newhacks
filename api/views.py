@@ -19,3 +19,28 @@ from api import models
 class AssignmentViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AssignmentSerializer
     queryset = models.Assignment.objects.all()
+
+
+class Course212ViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AssignmentSerializer
+    queryset = models.Assignment.objects.filter(course="ECE212")
+    
+
+class Course241ViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AssignmentSerializer
+    queryset = models.Assignment.objects.filter(course="ECE241")
+
+    
+class Course244ViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AssignmentSerializer
+    queryset = models.Assignment.objects.filter(course="ECE244")
+
+    
+class Course290ViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AssignmentSerializer
+    queryset = models.Assignment.objects.filter(course="MAT290")
+
+
+class Course291ViewSet(viewsets.ModelViewSet):
+    serializer_class = serializers.AssignmentSerializer
+    queryset = models.Assignment.objects.filter(course="MAT291")

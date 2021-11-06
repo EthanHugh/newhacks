@@ -1,1 +1,1 @@
-web: gunicorn testsite.wsgi
+web: gunicorn loserspov.wsgi

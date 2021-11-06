@@ -18,5 +18,5 @@ class Assignment(models.Model):
 
     def __str__(self):
         """Return the model as a string"""
-        return str(self.assignment_name)
+        return str(self.course) + "-" + str(self.assignment_name)
 

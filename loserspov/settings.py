@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'loserspov.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE' : 'django.db.backends.postgresql',
+        'NAME' : 'dfmmp40541kss6',
+        'HOST' : 'ec2-34-200-139-9.compute-1.amazonaws.com',
+        'PORT' : 5432,
+        'USER' : 'uwwcpwrvqeqcuj',
+        'PASSWORD' : 'c4df56372eec9d3a02eb178f4748c82a4182a1c159758b8521cda58e985e8fcb',
     }
 }
 

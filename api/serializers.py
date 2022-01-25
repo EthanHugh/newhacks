@@ -10,3 +10,10 @@ class AssignmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Assignment
         fields = '__all__'
+        
+
+class OldAssignmentSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Old_Assignment
+        fields = '__all__'
